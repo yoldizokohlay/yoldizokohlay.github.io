@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spellora — Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .lang-selector {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .lang-section {
+      display: none;
+    }
+    .lang-section.active {
+      display: block;
+    }
+    select {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Spellora — Privacy Policy</h1>
+  <div class="lang-selector">
+    <label for="language">Choose language: </label>
+    <select id="language">
+      <option value="en" selected>English</option>
+      <option value="ru">Русский</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="it">Italiano</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+    </select>
+  </div>
+
+  <!-- English -->
+  <div class="lang-section active" id="en">
+    <p>We do not collect, store, or share any personal data from users of Spellora.</p>
+    <p>The game may display third-party ads which can collect anonymous usage data. These ads are managed by third-party services and are not controlled by us.</p>
+    <p>If you have questions about privacy, contact us at: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- Russian -->
+  <div class="lang-section" id="ru">
+    <p>Мы не собираем, не храним и не передаём какие-либо персональные данные пользователей игры Spellora.</p>
+    <p>Игра может показывать рекламу сторонних сервисов, которые могут собирать анонимные данные об использовании. Эти сервисы не контролируются нами.</p>
+    <p>Если у вас есть вопросы по конфиденциальности, напишите нам: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- German -->
+  <div class="lang-section" id="de">
+    <p>Wir sammeln, speichern oder teilen keine persönlichen Daten von Benutzern von Spellora.</p>
+    <p>Das Spiel kann Werbung von Drittanbietern anzeigen, die anonyme Nutzungsdaten sammeln können. Diese Werbung wird von Drittanbietern verwaltet und nicht von uns kontrolliert.</p>
+    <p>Kontakt: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- French -->
+  <div class="lang-section" id="fr">
+    <p>Nous ne collectons, ne stockons ni ne partageons aucune donnée personnelle des utilisateurs de Spellora.</p>
+    <p>Le jeu peut afficher des publicités de tiers pouvant collecter des données d’utilisation anonymes. Ces publicités sont gérées par des services tiers que nous ne contrôlons pas.</p>
+    <p>Contact : <a href="mailto:aasrs.games@gmail.comm">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- Italian -->
+  <div class="lang-section" id="it">
+    <p>Non raccogliamo, archiviamo o condividiamo alcun dato personale degli utenti di Spellora.</p>
+    <p>Il gioco può mostrare annunci di terze parti che possono raccogliere dati anonimi sull'utilizzo. Questi annunci sono gestiti da servizi di terze parti e non sono controllati da noi.</p>
+    <p>Contatto: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- Spanish -->
+  <div class="lang-section" id="es">
+    <p>No recopilamos, almacenamos ni compartimos ningún dato personal de los usuarios de Spellora.</p>
+    <p>El juego puede mostrar anuncios de terceros que pueden recopilar datos de uso anónimos. Estos anuncios son gestionados por servicios de terceros y no están bajo nuestro control.</p>
+    <p>Contacto: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <!-- Portuguese -->
+  <div class="lang-section" id="pt">
+    <p>Não coletamos, armazenamos ou compartilhamos quaisquer dados pessoais dos usuários do Spellora.</p>
+    <p>O jogo pode exibir anúncios de terceiros que podem coletar dados de uso anônimos. Esses anúncios são gerenciados por serviços de terceiros e não são controlados por nós.</p>
+    <p>Contato: <a href="mailto:aasrs.games@gmail.com">aasrs.games@gmail.com</a></p>
+  </div>
+
+  <script>
+    const select = document.getElementById('language');
+    const sections = document.querySelectorAll('.lang-section');
+    select.addEventListener('change', () => {
+      sections.forEach(s => s.classList.remove('active'));
+      document.getElementById(select.value).classList.add('active');
+    });
+  </script>
+</body>
+</html>
